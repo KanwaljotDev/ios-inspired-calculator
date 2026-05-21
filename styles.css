@@ -1,0 +1,122 @@
+@font-face {
+    font-family: SF-Pro;
+    src: url("fonts/SF-Pro.ttf");
+}
+
+html, body {
+   margin: 0px;
+   padding: 0px;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+h1, h2 {
+    margin: 0px;
+}
+
+button {
+    height: 75px;
+    width: 75px;
+    border: none; 
+    border-radius: 50%; 
+    font-family: SF-Pro, sans-serif;
+    font-size: 24px;
+}
+
+
+.zero-btn {
+    width: 155px;
+    height: 75px;
+    border-radius: 100px;
+}
+
+.calculator {
+    position: relative;
+    background: #000000;
+    border-radius: 25px;
+    padding-left: 5px; 
+    padding-right: 5px; 
+    padding-bottom: 50px; 
+    padding-top: 175px;
+}
+.calculator-body{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 350px;
+    gap: 5px;
+    
+}
+
+.result {
+    font-family: SF-Pro, sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    text-align: right;
+    margin-bottom: 10px;
+    margin-right: 25px;
+}
+
+.numpad{
+    background: #2f2f2f;
+    color: #ffffff;
+}
+
+.numpad:hover, .numpad:active {
+    background: #4a4a4a;
+    color: #ffffff;
+}
+
+.function {
+    background: #a6a6a6;
+    color: #ffffff;
+}
+
+.function:hover, .function:active {
+    background: #c2c2c2;
+    color:  #ffffff;
+}
+
+.operation {
+    background: #e5a536;
+    color: #ffffff;
+}
+
+.operation:hover, .operation:active {
+    background: #f0bc5f;
+    color: #ffffff;
+}
+
+
+.cell-signal, .wifi-signal, .battery {
+    height: 25px;
+    width: 25px;
+    margin-right: 2px;
+}
+
+.time {
+    color: #ffffff;
+    font-family: SF-Pro, sans-serif;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.dynamic-island{
+    background: #1C1C1E;
+    width: 100px;
+    height: 25px;
+    border-radius: 60px;
+    margin-left: 5px;
+}
+
+.status-bar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}

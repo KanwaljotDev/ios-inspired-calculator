@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Kanwaljot's Calculator</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+
+
+        <div class="calculator">
+
+            <div class="status-bar">
+
+                <div class="time">
+                    <h2 id="time">9:41</h2>
+                </div>
+
+                <div class="dynamic-island"></div>
+
+                <div>
+                    <img class="cell-signal" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAAB4klEQVR4nO3cTWoUYRRG4TKgO0iiq1CR7MfEvyU4ENEKDuKekogIbsOB4kTJxH8nRwqcddetVPqzXzucBzIr+t76zixV3V0nSZIkSZIkSZLWAbgNvAK+Mc9w/Slway2LXkbALvCZ1XwCdtL3spGAB7RxkL6XjQQ8axTgafpeNhIGyDLA/xvg+cj1hwZoyABhBggzQJgBwgwQZoAwA4QZIMwAYQYIM0CYAcIMEGaAMAOEGSDMAGEGmABcB+4Bj2f+HZznXR0DFIA94IzVXpgq31ozQAF4y+pOJ2YYYBngCvCrQYAvE3MMsAywRRu/J+YYYBkDhGGALAyQhQGyMEAWBsjCAFkYIAsDZGGALAyQhQFqw//ZL/jt8u/Aa+DOxOcboFh6++/DjlWcATeKGQYolt5vdDiPihkGKJZ+0uhw+mKGAYqlDbDIACMMUOiLGQYoljbAIgOMMEChL2YYoFjaAIsMMMIAhb6YYYBiaQMsMsAIA2xogLkMMMIAhb6YYYA1PA94ODHnY4MZ7yZm3KeNu80Pulh6518/ERsALxsczGG3nt+O3u4Cvzg+PNv9MXPZn8Cb4ftf3fSMa8AR8OECh/IeeAFcPefz7RPg68wZw/XHwM1mBytJkiRJkiRJkiR1l8kfKVcdavA6h8oAAAAASUVORK5CYII=" alt="medium-connection">
+                
+                    <img class="wifi-signal" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAAFFklEQVR4nO2ca4hVVRTHd/kKLSuKIHJCQ8keSBEp9WGqISKz0MmMILIHpX0JiQp7UEzf+lL0sMgIJ6IgtbGizOxtNpm9sA+R9aUsKntAZg+lcn6xuGvoMtzr3Ll773P2PrN+cGC4c+89a+29zz5r/dc61znDMAzDMAzDMAzDMAzDMAzDMAzDMEoCmAScDFwAXAf0AA8BK4GngTV6PKWvPajvuRaYq5+dWLYfWQAcBHQBd+igfgnsw59/ge3AauB24BxgQtn+JgFwPLAceBX4i+L4E9gI3ALMcKMJ4DhdidtIh090IUx1VQQ4EDgXeBEYIF32Aa8Bi4CxriI30ZuBb8iPr4Ebs7yJ68AvA74nf37S7Sn9iQAOAK4CdlI9vgMuFx9digCnAu9SfT4AZrtUAMZp8iPx9mjhH+AeYHzZg38S8DGjl0+BWWUN/mJgTwFh4VeaqD2sN8MluhdfrKGtHAuBK4ClwG3AI8DrwI4Cwl5J6i4rcuDHAvdFcuY3zRVuAk4PIRmoxDFbs971wO4Idg/oljQmzCg3d2Yi8HJg43cC9wNzojvw/wI6U4W7nwP78oJMeCzDJwObAhn6t4pj88rMOOUmCswH1gUMImTrmxTa0EM1/PJlL/AoMM0lBjAdWKWLwxcJxw8OuUpkVn0Qpx4AprjEAaYBj2mo6cN676tbM9snPA3pl3DVZQYwC9ji6fvjvkZc6nHyX4HrRQl1mQKMAW7Q6KxdLvEx4BqPVX+MqwhAh8fVcLXvClg7whOuiJWiU5M9ZDBOAzrrErFOfW2KvCfSucdrMjgS+kLcB8bpFw2HlBQXB4685muCswH4tsWsdkDfu0E/uwA4LLAC0Er59Nlgi0EnQWLlZkh22RngPB1aBOkPEIXUIzH+e5phHxvATknkdu3nfGuC5zd6CT7f4GRiyBme29wC1XuKKFcOaNmx22eQdMv7pcH3PxMtuWwwCRLpzPGoEy8CvqDcsuOSdrcK4AQt1AyyOnpmr5MgYtxzwIltfsd52quTCrII5np0efRqP1N0LcsL4EjdH1OlDzjKVRFtFfyB9PlRREJXFVTOWB6ozbAoBvX9bLP4+gjHV0sqkyezbdDSwsdIs+gU8c9my0Al3Rjs1r7St4FX9Nikr/0e6Zyrku0HaoQ2Z4Vih/b+dw+Xxer9ZqookCIFD4nRfbnS5QJwdwDpYJ3mC22vPE325qku5BsE3OVyQevHH7YZfawFZkaw6RTdrtptXw8m6BWCGDzCOvLnInIVYNf5uq21iiykw12OqKT8fgtO3hutnaP5FSr3iOHYmt3KbzIJzapJe8q8uWk3XbPuPpHEJ7sqoCtO9Ph6/gDOSsC2Lm0vrGczcIirEuKQOjYYy3e5RADOrssh3gzW05MadZ1oHS4xqMnKC2PVlCsBMEMffRJ96R3Nfrfp3736v+ll21kpqGW33SMMabdq+3o+8kGKADM9G4I3prjdZQG1EHFodNIOu7LScVIAuJXw9JTtVxZQ+1WUWCwr27+kofY4kTxDEIu9WRZXioRwT+E0YkvZ/uWiHfVHGPzPgKPL9i+n35p4I+DgfwQcUbZfWUHtiUzpF/Vlc2VUzaIBJjRpCG6VtyorrBUs4PW1MfgvFVnkqTTUGrykSapVpEvZVM0Ik9DbwuDLz1larB9RGV2xn8FfmX0/ZyaT0DPkaRr5+06TnwsEuFCL/XJcVLY9hmEYhmEYhmEYhmEYhmEYhmEYhmEYLj3+A2g/ZsAFiNKAAAAAAElFTkSuQmCC" alt="wifi">
+            
+                    <img class="battery" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAACqklEQVR4nO3bz4tNYRzH8evnjGJkZ6IshsSKlZFshJ0siIWFomYjFiJZiKQoLPwBSBgLPxZjIbbSLJCVHzsShQyNkN9vndzFNN3nzL3mOefcM+f9qru7fZ/zfD/353Oep1aTJEmSJEmSJEmSJEmSJEnKF7AUOAzcA14DP6mOT8AToB/YAnTm2fgF9YH/FN2FNvIS2J5H81cBb4uebRu7AszIqvmrge9Fz7AEbgKTYzd/PvCu6JmVyLHYAVwoekYl8wNYGKv5PcDvwEDfkrSBRcDUWkUAXcAG4GFKCOdiDbY/MEDyfbCmVmFAB3Ar0J8PwLQYg9wJDHAyyixKDpgLfAn0aGWMAZ4Fii+LMoMJABgI9GhrjOLJW6mROYHnrwf2AQfa/NEHdI+7Qf/mfCbQoz0xig8Hinc1eO4lyuUj0BuhR6cD9ffmFkD9lV9Gg3kGADxI1o+yCOAg5f3NPjnHAEYuW3TEDOAI5TWlgAASN4BJBkBhASR2GwCFBjAEzDKA4gJI7EwrbgDZB3A9rbgBZB/A87TiBpB9AF/TihtA9gF8TituAGPwI6j8AVw1gGID2JFW3ACyDeA9MDOtuAFkG8CusYobQHYBXIu5GOdydGsBXAamN1O82QDWUU6D42n+fwRwH9jUSvGJfktyRZ4B5HFTPnknHAJOtPmjryw35Z8Gii+PcfETARlvSwltzDoV5epLDuhOFtMCPeqNMUCyxyf062FtrcKATuB2oD9DUfbL1jfn/krZH3ocWFyxzbmzgY3AI8LOxhzwfMpAavzC7IkZwDwPaLTkaLTmjwjBI0rNGYh+RGnUIb03TV5IFfVndkhv1HmxiymnZqroBbAt08Y3CGJJ/R/vXeBVxQ5qDwOP60svm3M9qC1JkiRJkiRJkiRJkiRJklRryV9k36XD5/8l7gAAAABJRU5ErkJggg==" alt="high-battery">
+                </div>
+
+             </div>
+
+            <div class="result">
+                <h1 id="result">0</h1>
+            </div>
+
+            <div class="calculator-body">
+                <div class="row-one">
+                    <button id="clear-btn" class="function">AC</button>
+                    <button id="sign-btn"  class="function">+/-</button>
+                    <button id="modulo-btn"class="function">%</button>
+                    <button id="divide-btn"class="operation">÷</button>
+                </div>
+
+                <div class="row-two">
+                    <button id="seven-btn" class="numpad">7</button>
+                    <button id="eight-btn" class="numpad">8</button>
+                    <button id="nine-btn"  class="numpad">9</button>
+                    <button id="multiply-btn"class="operation">x</button>
+                </div>
+
+                <div class="row-three">
+                    <button id="four-btn" class="numpad">4</button>
+                    <button id="five-btn" class="numpad">5</button>
+                    <button id="six-btn"  class="numpad">6</button>
+                    <button id="minus-btn"class="operation">-</button>
+                </div>
+
+                <div class="row-four">
+                    <button id="one-btn" class="numpad">1</button>
+                    <button id="two-btn" class="numpad">2</button>
+                    <button id="three-btn" class="numpad">3</button>
+                    <button id="plus-btn" class="operation">+</button>
+                </div>
+                
+                <div class="row-five">
+                    <button id="zero-btn" class="numpad zero-btn">0</button>
+                    <button id="decimal-btn" class="numpad">.</button>
+                    <button id="equal-btn" class="operation">=</button>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
